@@ -1,0 +1,10 @@
+/* 
+The element matches the :valid CSS pseudo-class, 
+which lets you apply a specific style to valid elements.
+*/
+.password0:invalid{
+  border: 2px solid red;
+}
+.password0:valid{
+  border: 2px solid green;
+} 

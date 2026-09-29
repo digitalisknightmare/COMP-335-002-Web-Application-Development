@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Example</title>
+  <!--Javascript can be either inside <head> or <body>-->
+  <!-- <script  src="./javascripts/basic.js"></script>-->
+  <!--
+  <script >
+    function foo(){
+      // GetElementByID() will retrieve a single element object based on the unique id specified, 
+      document.getElementById("h1Tag").innerHTML="Now I know JavaScript!!";
+      document.getElementById("h1Tag").style.color="blue";
+
+      // GetElementsByTagName() will retrieve an array of all element objects with the specified tag name.
+      document.getElementsByTagName("h3")[0].innerHTML="I have awesome homepage too!";
+      document.getElementById("h3Tag").style.color="green";
+      window.alert ("Hello World!");      
+    }
+  </script>
+  -->
+</head>
+<body>
+  <h1 id="h1Tag"> Hello fellow Web programmers! </h1>
+  <h3 id="h3Tag"> Don't forget to submit assignment!  </h3>
+  <button type="button" onclick="foo()">Click me</button>
+
+
+  <script >
+    function foo(){
+      
+      // GetElementByID() will retrieve a single element object based on the unique id specified, 
+      document.getElementById("h1Tag").innerHTML="Now I know JavaScript!!";
+      document.getElementById("h1Tag").style.color="blue";
+
+      // GetElementsByTagName() will retrieve an array of all element objects with the specified tag name.
+      document.getElementsByTagName("h3")[0].innerHTML="I have awesome homepage too!";
+      document.getElementById("h3Tag").style.color="green";
+      //window.alert ("Hello World!");      
+    }
+  </script>
+  <!--
+  Placing scripts at the very end of the body (right before </body>) means 
+  the browser parses and renders all the HTML and CSS before executing the JavaScript.
+  
+  For most projects, place your standard script tags just before the closing </body> tag, 
+  or use <script src="..." defer></script> inside the <head> without sacrificing performance.
+  -->
+</body>
+</html>
